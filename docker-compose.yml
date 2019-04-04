@@ -2,14 +2,14 @@ version: '2'
 services:
  web:
    image: vulhub/magento:2.2.7
-	container_name: magento227sqli-web
+   container_name: magento227sqli-web
    depends_on:
     - mysql
    ports:
     - "8888:80"
  mysql:
    image: mysql:5.7
-	container_name: magento227sqli-mysql
+   container_name: magento227sqli-mysql
    environment: 
     - MYSQL_ROOT_PASSWORD=root
     - MYSQL_DATABASE=magento
